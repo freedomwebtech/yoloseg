@@ -28,7 +28,7 @@ while True:
     if count % 2 != 0:
         continue
 
-    frame = cv2.resize(frame, (1020, 500))
+    frame = cv2.resize(frame, (1020, 600))
     
     # Run YOLOv8 tracking on the frame, persisting tracks between frames
     results = model.track(frame, persist=True)
